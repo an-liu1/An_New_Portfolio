@@ -2,7 +2,7 @@ body {
   font-family: 'Bree Serif', serif;
     font-size: 14px;
 
-    /* background-image: url(../images/bckgrd.png); */
+    background-image: url(../images/bckgrd.png);
   }
   
   h1,
@@ -113,9 +113,98 @@ body {
 .banner{
   width: 100%;
   height: 965px;
-  background-image: url(../images/banner.gif);
+  background-image: url(../images/banner2.jpg);
 }
 
+/* fixed info */
+.my{
+     z-index: 999;
+     position: fixed;
+     top:150px;
+     left: 0;
+}
+.my-image img{
+    max-width: 100%; 
+    vertical-align: middle;
+}
+h3 {
+    font-size: 24px; 
+    font-weight: normal; 
+    margin: 10px 0 0; 
+    text-transform: uppercase;
+}
+h5 {
+    font-size: 16px; 
+    font-weight: 300; 
+    margin: 0 0 15px; 
+    line-height: 22px;
+}
+.my-info .address {
+    list-style-type: none;
+    /* margin: 0 auto; */
+    padding-left: 10px;
+} 
+.my-info .address > li {
+    line-height: 30px;
+    text-align: left;
+}
+.my-info .address > li > b{
+      margin-right: 10px;
+}
+.social-touch a{
+    display: inline-block; 
+    vertical-align: middle; 
+    margin: 0 12px; 
+    font-size: 1.2em; 
+    color: #ffffff; 
+    opacity: 0.7; 
+    transition: 0.3s;
+}
+.social-touch a:hover{
+    opacity: 1; 
+    transition: 0.3s;
+}
+.portrait{
+    border-radius: 5px 5px 0 0; 
+    padding-bottom: 40px;
+    width: 280px;
+    margin: 30px 2.5%; 
+    background-color: #fff; 
+    text-align: center;
+}
+.portrait .my-image {
+    border: 2px solid #fff; 
+    border-radius: 60px 0; 
+    display: inline-block; 
+    margin-top: -72px; 
+    overflow: hidden; 
+    transition: 0.3s;
+}
+.portrait .social-touch{
+    background-color: #e13157; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    height: 5px; 
+    overflow: hidden; 
+    padding: 5px 0 0; 
+    width: 100%; 
+    transition: 0.3s;
+}
+.portrait .my-image img{
+    transition: 0.3s; 
+    border-radius: 60px 0;
+}
+.portrait:hover .my-image{
+    border-color: #e13157; 
+    transition: 0.3s; 
+    border-radius: 50%;
+}
+.portrait:hover .social-touch{
+    padding: 6px 0; 
+    height: 38px; 
+    transition: 0.3s;
+}
 
 /*Home*/
 .bg-home {
@@ -245,11 +334,10 @@ body {
     width: 100%;
     /* background-image: url('../images/banner.png'); */
   }
-  .left {
+  /* .left {
     z-index: 999;
     border: #dc0a18 solid 1px;
-    border-radius: 30px;
-    /* background-color: black; */
+    border-radius: 30px
   }
   hr {
     border:0;
@@ -276,21 +364,17 @@ body {
     border-radius: 20px;
     margin: 10px auto;
     display: block;
-  }
-  
-  .right {
+  } */
+  /* .right {
     z-index: 999;
-    
-    /* background-color: black; */
   }
   
   .right video {
-    /* padding-top: 10px; */
     border: #dc0a18 solid 1px;
     border-radius: 30px;
     width: 100%;
     display: block;
-  }
+  } */
   .ro{
     margin-top: 200px;
     margin-left: 49%;
@@ -307,17 +391,19 @@ body {
   }
   #info {
     display: block;
-    background-image: url('../images/about_bckgrd.png');
+  }
+  #info video {
+      width: 100%;
+      border-radius: 30px;
   }
   
   #info .na {
     color: #b50611;
     text-indent: 2em;
     border-top: 2px solid #b50611;
-    padding-top: 50px;
     border-bottom: 2px solid #b50611;
-    padding-bottom: 50px;
     font-size: 1.25em;
+    padding: 30px 0;
   }
 
   #box {
@@ -349,7 +435,7 @@ body {
   line-height: 380px;
 }
 #experiences{
-    background-image: url(../images/banner5.gif);
+    /* background-image: url(../images/banner5.gif); */
 }
 
 /* projects */
@@ -449,7 +535,7 @@ body {
   
   @media (min-width: 1600px) {
     .container-fluid {
-      max-width: 80%;
+      max-width: 65%;
     }
   }
   @media (min-width: 200px) and (max-width: 768px) {
