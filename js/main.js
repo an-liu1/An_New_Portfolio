@@ -63,17 +63,6 @@
         $(this).ekkoLightbox();
     });
 
-    //project shadow
-    $('div.awSlider .carousel').carousel({
-        pause: 'hover',
-        interval: 2000
-    });
-    var startImage = $('div.awSlider .carousel-item.active > img').attr('src');
-    $('div.awSlider').append('<img src="' + startImage + '">');
-    $('div.awSlider .carousel').on('slid.bs.carousel', function () {
-        var bscn = $(this).find('.carousel-item.active > img').attr('src');
-        $('div.awSlider > img').attr('src', bscn);
-    });
 
     initFixedInfoDisplay = () => {
         if(window.location.hash == '#home' || window.location.hash == '#' || window.location.hash == ''){
