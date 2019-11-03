@@ -21,8 +21,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- bootstrap ekko-lightbox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-        integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" /> -->
+
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
@@ -51,7 +52,7 @@
                         <a href="#info" class="nav-link font-weight-bold">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experiences" class="nav-link font-weight-bold">RESUME</a>
+                        <a href="#experiences" class="nav-link font-weight-bold">EXPERIENCE</a>
                     </li>
                     <li class="nav-item">
                         <a href="#project" class="nav-link font-weight-bold">PROJECTS</a>
@@ -67,44 +68,45 @@
     </nav>
     <!-- Navbar End -->
 
-    <div data-spy="scroll" data-target="#navbar-example" data-offset="0">
-        <!-- home start -->
-        <section class="bg-home banner" id="home">
-            <div class="container-fluid">
-                <h1 class="hide">HomePage</h1>
-                <div class="home-center">
-                    <div class="home-desc-center">
-                        <div class="container-fluid">
-                            <div class="row align-items-center">
-                                <div class="col-lg-8">
-                                    <div class="home-title mo-mb-20">
-                                        <p class="mb-4 my_name text-white">An Liu</p>
-                                        <p class="text-white web_developer mb-5">Web Developer & Designer</p>
-                                        <div class="social-icons">
-                                            <ul class="top-links">
-                                                <li><a target="_blank"
-                                                        href="https://www.facebook.com/	profile.php?id=100013376169698"><i
-                                                            class="fab fa-facebook"></i></a></li>
-                                                <li><a target="_blank" href="http://www.twitter.com"><i
-                                                            class="fab fa-twitter"></i></a></li>
-                                                <li><a target="_blank"
-                                                        href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
-                                                            class="fab fa-linkedin"></i></a></li>
-                                                <li><a target="_blank" href="https://github.com/an-liu1"><i
-                                                            class="fab fa-github"></i></a></li>
-                                            </ul>
+    <div class="section-wrapper">
+        <div class="section" data-hash="section-1" data-spy="scroll" data-target="#navbar-example" data-offset="0">
+            <!-- home start -->
+            <section class="bg-home banner" id="home">
+                <div class="container-fluid">
+                    <h1 class="hide">HomePage</h1>
+                    <div class="home-center">
+                        <div class="home-desc-center">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="home-title mo-mb-20">
+                                            <p class="mb-4 my_name text-white">An Liu</p>
+                                            <p class="text-white web_developer mb-5">Web Developer & Designer</p>
+                                            <div class="social-icons">
+                                                <ul class="top-links">
+                                                    <li><a target="_blank"
+                                                            href="https://www.facebook.com/	profile.php?id=100013376169698"><i
+                                                                class="fab fa-facebook"></i></a></li>
+                                                    <li><a target="_blank" href="http://www.twitter.com"><i
+                                                                class="fab fa-twitter"></i></a></li>
+                                                    <li><a target="_blank"
+                                                            href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
+                                                                class="fab fa-linkedin"></i></a></li>
+                                                    <li><a target="_blank" href="https://github.com/an-liu1"><i
+                                                                class="fab fa-github"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- end row -->
                             </div>
-                            <!-- end row -->
+                            <!-- end container-fluid -->
                         </div>
-                        <!-- end container-fluid -->
                     </div>
                 </div>
-            </div>
 
-            <!-- <section class="row justify-content-md-center leftright">
+                <!-- <section class="row justify-content-md-center leftright">
                 <h2 class="hide">Infomation About Me</h2>
                 <div class="col-11 col-md-4 left">
                     <a href="images/portrait_open.jpg" data-toggle="lightbox" data-title="My Portrait">
@@ -128,377 +130,392 @@
                     </video>
                 </div>
             </section> -->
-            <a href="#info" class="roo"><img src="images/rows.svg" class="ro animated infinite bounce" alt="rows"
-                    width="40"></a>
-        </section>
+                <a href="#info" class="roo"><img src="images/rows.svg" class="ro animated infinite bounce" alt="rows"
+                        width="40"></a>
+            </section>
+        </div>
         <!-- home end -->
+        <section class="my portrait">
+            <div class="my-image">
+                <img src="images/portrait2.jpg" alt="portrait">
+            </div>
+            <!-- <div><i class="fas fa-times-circle"></i></div> -->
+            <div class="my-info">
+                <h3>AN LIU</h3>
+                <h5>WEB DEVELOPER</h5>
+                <ul class="address">
+                    <li><b>NAME :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An(Andy) Liu</li>
+                    <li><b>PHONE :</b> &nbsp;&nbsp;&nbsp; +1 519 697 4518</li>
+                    <li><b>ADDRESS :</b> Toronto, ON Canada</li>
+                    <li><b>E-MAIL :</b> &nbsp;&nbsp;&nbsp;&nbsp;andyvviiar@gmail.com</li>
+                </ul>
+                <div class="social-touch">
+                    <a target="_blank" href="https://www.facebook.com/	profile.php?id=100013376169698"><i
+                            class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/an-liu1"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
 
 
-
-
-
-        <section id="info">
+        <section id="info" class="section" data-hash="section-2">
             <div class="container-fluid">
                 <h1 class="hide">An(Andy) Liu information</h1>
-
                 <h2 class="title Sp-title">About Me</h2>
-                <p class="na">Experienced web developer and web designer looking for a web developer position, with a
-                    specialty in logical thinking and code writing. An energetic, results-driven individual with proven
-                    skills in web development using the latest technologies. Thorough understanding of continuous
-                    development models to contribute to the success of web development projects. Five years experience
-                    in student union in both China and Canada, organizing and getting involved in school and faculty
-                    events with most students. Experience in entrepreneurial business and social media management when I
-                    created my own business in China.</p>
+                <div class="row">
+                    <div class="col-md-7 wow bounceInLeft" data-wow-delay="0.5s">
+                        <video controls poster="images/video_poster.png">
+                            <source src="video/aboutme.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-5 wow bounceInRight" data-wow-delay="0.5s">
+                        <p class="na">Experienced web developer and web designer looking for a web developer
+                            position, with a specialty in logical thinking and code writing. An energetic,
+                            results-driven individual with proven skills in web development using the latest
+                            technologies. Thorough understanding of continuous development models to contribute to
+                            the success of web development projects. Five years experience in student union in both
+                            China and Canada, organizing and getting involved in school and faculty events with most
+                            students.</p>
+                    </div>
+                </div>
 
-                <h2 class="title">My Skills</h2>
-                <div class="skill-tablet">
-                    <div id="box">
-                        <img src="images/HTML5.svg" alt="html5" class="img-fluid">
-                        <img src="images/CSS3.svg" alt="css3" class="img-fluid">
-                        <img src="images/java-script.svg" alt="java-script" class="img-fluid">
-                        <img src="images/xml.svg" alt="xml" class="img-fluid">
-                        <img src="images/SASS.svg" alt="sass" class="img-fluid">
-                        <img src="images/gulp.svg" alt="gulp" class="img-fluid">
-                        <img src="images/php.svg" alt="php" class="img-fluid">
-                        <img src="images/jQuery.svg" alt="jquery" class="img-fluid">
-                        <img src="images/github.svg" alt="github" class="img-fluid">
-                        <img src="images/laravel.svg" alt="laravel" class="img-fluid">
-                        <img src="images/vue.svg" alt="vue" class="img-fluid">
-                        <img src="images/mysql.svg" alt="mysql" class="img-fluid">
-                        <img src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                        <img src="images/react.svg" alt="react" class="img-fluid">
-                    </div>
+                <h2 class="title skills">My Skills</h2>
+                <div class="row mb-4">
+                    <img class="col-md-1 wow bounce" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
+                        alt="html5" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow flash" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/CSS3.svg" alt="css3" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow pulse" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/java-script.svg" alt="java-script" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow rubberBand" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/xml.svg" alt="xml" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow shake" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/SASS.svg" alt="sass" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow headShake" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/gulp.svg" alt="gulp" class="img-fluid">
                 </div>
-                <div class="skill-phone">
-                    <div class="row">
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/HTML5.svg" alt="html5" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/CSS3.svg" alt="css3" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/java-script.svg" alt="JavaScript" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/xml.svg" alt="xml" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/SASS.svg" alt="sass" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/gulp.svg" alt="gulp" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-2 offset-4 mt-4">
-                        <img src="images/vue.svg" alt="vue" class="img-fluid">
-                        <img src="images/react.svg" alt="react" class="img-fluid">
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/jQuery.svg" alt="jquery" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/github.svg" alt="github" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/laravel.svg" alt="laravel" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/php.svg" alt="php" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/mysql.svg" alt="mysql" class="img-fluid">
-                        </div>
-                        <div class="col-4 col-md-2 mb-2">
-                            <img src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                        </div>
-                    </div>
+                <div class="row mb-4">
+                    <img class="col-md-1 offset-md-4 wow bounceInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/react.svg" alt="react" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow zoomIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/vue.svg" alt="vue" class="img-fluid">
                 </div>
-            </div>
+                <div class="row">
+                    <img class="col-md-1 wow fadeIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/jQuery.svg" alt="jquery" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow fadeInRightBig" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/github.svg" alt="github" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow heartBeat" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/laravel.svg" alt="laravel" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/mysql.svg" alt="mysql" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow slideInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
+                    <img class="col-md-1 offset-md-1 wow zoomInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/php.svg" alt="php" class="img-fluid">
+                </div>
         </section>
-        <section id="experiences">
+
+        <section id="experiences" class="section" data-hash="section-3">
             <div class="container-fluid">
                 <h1 class="hide">An(Andy) Liu resume</h1>
-                <h2 class="title">Resume</h2>
-                <h3 class="text-center  mb-4">EDUCATION</h3>
-                <section class="education row">
-                    <div class="card shadow-lg p-2 bg-white rounded offset-md-2 col-md-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Interactive Media Design</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2017.09-2019.04</h6>
-                            <p class="card-text"><b>Fanshawe College</b><br>
-                                <b>Extra-Curricular Involvement</b>:<br>
-                                • Peer Tutor, The President of Fanshawe Chinese Club<br>
-                                <b>Coursework</b>:<br>
-                                • Multimeida and The Internet <br>
-                                • Digital Media Theory & Project Management<br>
-                                • Web development
-                                • Multimedia Production<br>
-                                • Multimedia Authoring</p>
+                <h2 class="title">Experience</h2>
+                <div class="experience-history">
+                    <div class="experience-history-list wow zoomIn" data-wow-delay=".5s">
+                        <div class="flex-viewport">
+                            <ul class="slides clearfix list">
+                                <li>
+                                    <div class="item">
+                                        <h3>Front End Developer</h3>
+                                        <div class="desc">
+                                            <h5>SomoPlay Inc.</h5>
+                                            <p><b>2019.06 - Current</b><br>
+                                                • Working with templating systems in designing new content in the
+                                                website<br>
+                                                • Transformming basic web code into Vue,js/React.js framework<br>
+                                                • Discovering and writing new js feature with third party packages and
+                                                Javascript
+                                                ES6/ES7<br>
+                                                • Designing and writing CMS system with API</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>Web Designer and Developer</h3>
+                                        <div class="desc">
+                                            <h5>Chuck Howard Associates Inc.</h5>
+                                            <p><b>2019.02 - 2019.05</b><br>
+                                                • Assisted clients in understanding the feasible options in updating and
+                                                helped them
+                                                select the right service plans for their requirements to
+                                                redesign (category, clear structure, obvious product feature).<br>
+                                                • Rebuilt the web code in MVC design pattern for later maintenance and
+                                                updating.<br>
+                                                • Created the database in MySQL and categorized data by using the
+                                                linking
+                                                tables.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>Interactive Media Design</h3>
+                                        <div class="desc">
+                                            <h5>Fanshawe College</h5>
+                                            <p><b>2017.09-2019.04</b><br>
+                                                <b>Extra-Curricular Involvement</b>:<br>
+                                                • Peer Tutor, The President of Fanshawe Chinese Club<br>
+                                                <b>Coursework</b>:<br>
+                                                • Multimeida and The Internet <br>
+                                                • Digital Media Theory & Project Management<br>
+                                                • Web development
+                                                • Multimedia Production<br>
+                                                • Multimedia Authoring</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>Software Engineering</h3>
+                                        <div class="desc">
+                                            <h5>JiangXi Agriculture University -- Bachelor of Engineering</h5>
+                                            <p><b>2012.09-2016.06</b><br>
+                                                <b>Extra-Curricular Involvement</b>:<br>
+                                                • Startup CEO, Freshman Counselor, The Office Director of Student
+                                                Union<br>
+                                                <b>Coursework</b>:<br>
+                                                • Web development technology (Java or .net)
+                                                • Web development foundation
+                                                • JAVA program design<br>
+                                                • Large database technology (oracle)
+                                                • Database principles and application</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>Web Developer && Member</h3>
+                                        <div class="desc">
+                                            <h5>Chinese Project Management Professionals Association of Canada(CPMP)
+                                            </h5>
+                                            <p><b>2019.10- Current</b><br>
+                                                • Website maintenance and update<br>
+                                                • Functions updating(payment interface, activity registration port) <br>
+                                                • Assisted with the aspect of activities organization in CPMP</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>President</h3>
+                                        <div class="desc">
+                                            <h5>Fanshawe Chinese Socirty</h5>
+                                            <p><b>2018.02-2019.04</b><br>
+                                                • Planned and organized activities each month to help new students
+                                                integrate
+                                                into
+                                                campus and Canada life as soon as possible.<br>
+                                                • Built FCS official website and social media account<br>
+                                                • Organized and hold special event --- Asian Lunar New Year's Party and
+                                                Mid-Autumn
+                                                Festival gala, etc. to unit international students.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <h3>Startup CEO</h3>
+                                        <div class="desc">
+                                            <h5>SanShiZuoZhu Entertainment(SSZZ)</h5>
+                                            <p><b>2014.10-2015.08</b><br>
+                                                • Founded SSZZ Entertainment, a platform for student societies to
+                                                organize
+                                                networking events.<br>
+                                                • Advertised and promoted the brand to the whole city by social media,
+                                                leaflets, and
+                                                interpersonal relationship; the value of SSZZ Entertainment was five
+                                                times
+                                                more than
+                                                the initial investment after liquidation</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
+                        <ul class="flex-direction-nav">
+                            <li class="flex-nav-prev"><a class="flex-prev" href="#">&lt;</a></li>
+                            <li class="flex-nav-next"><a class="flex-next" href="#">&gt;</a></li>
+                        </ul>
                     </div>
-                    <div class="col col-md-2 col-md-auto text-center mid"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="card shadow-lg p-2 bg-white rounded col-md-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Bachelor of Engineering – Software Engineering</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2012.09-2016.06</h6>
-                            <p class="card-text"><b>JiangXi Agriculture University</b><br>
-                                <b>Extra-Curricular Involvement</b>:<br>
-                                • Startup CEO, Freshman Counselor, The Office Director of Student Union<br>
-                                <b>Coursework</b>:<br>
-                                • Web development technology (Java or .net)
-                                • Web development foundation
-                                • JAVA program design<br>
-                                • Large database technology (oracle)
-                                • Database principles and application</p>
-                        </div>
-                    </div>
-                </section>
-
-                <h3 class="text-center mt-4  mb-4">EXPERIENCE</h3>
-                <section class="experience">
-                    <div class="row">
-                        <div class="card shadow-lg p-2 bg-white rounded offset-md-2 col-md-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Front End Developer</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2019.06 - Current</h6>
-                                <p class="card-text"><b>SomoPlay Inc.</b><br>
-                                    • Working with templating systems in designing new content in the website<br>
-                                    • Transformming basic web code into Vue,js/React.js framework<br>
-                                    • Discovering and writing new js feature with third party packages and Javascript
-                                    ES6/ES7<br>
-                                    • Designing and writing CMS system with API</p>
-                            </div>
-                        </div>
-                        <div class="col col-md-2 col-md-auto text-center mid"><i class="fas fa-briefcase"></i></div>
-                        <div class="card shadow-lg p-2 bg-white rounded col-md-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Web Designer and Developer</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2019.02 - 2019.05</h6>
-                                <p class="card-text"><b>Chuck Howard Associates Inc.</b><br>
-                                    • Assisted clients in understanding the feasible options in updating and helped them
-                                    select the right service plans for their requirements to
-                                    redesign (category, clear structure, obvious product feature).<br>
-                                    • Rebuilt the web code in MVC design pattern for later maintenance and updating.<br>
-                                    • Created the database in MySQL and categorized data by using the linking tables.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <h3 class="text-center mt-4 mb-4">WORK AND VOLUNTEER EXPERIENCE</h3>
-                <section class="volunteer">
-                    <div class="row">
-                        <div class="card shadow-lg p-2 bg-white rounded offset-md-05 col-md-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Web Developer && Member</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2019.10- Current</h6>
-                                <p class="card-text"><b>Chinese Project Management Professionals Association of
-                                        Canada(CPMP)</b><br>
-                                    • Website maintenance and update<br>
-                                    • Functions updating(payment interface, activity registration port) <br>
-                                    • Assisted with the aspect of activities organization in CPMP</p>
-                            </div>
-                        </div>
-                        <div class="col col-md-1 col-md-auto text-center mid"><i class="fas fa-user-plus"></i></div>
-                        <div class="card shadow-lg p-2 bg-white rounded col-md-3">
-                            <div class="card-body">
-                                <h5 class="card-title">President</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2018.02-2019.04</h6>
-                                <p class="card-text"><b>Fanshawe Chinese Socirty</b><br>
-                                    • Planned and organized activities each month to help new students integrate into
-                                    campus and Canada life as soon as possible.<br>
-                                    • Built FCS official website and social media account<br>
-                                    • Organized and hold special event --- Asian Lunar New Year's Party and Mid-Autumn
-                                    Festival gala, etc. to unit international students.</p>
-                            </div>
-                        </div>
-                        <div class="col col-md-1 col-md-auto text-center mid"><i class="fas fa-user-plus"></i></div>
-                        <div class="card shadow-lg p-2 bg-white rounded col-md-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Startup CEO</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2014.10-2015.08</h6>
-                                <p class="card-text"><b>SanShiZuoZhu Entertainment(SSZZ)</b><br>
-                                    • Founded SSZZ Entertainment, a platform for student societies to organize
-                                    networking events.<br>
-                                    • Advertised and promoted the brand to the whole city by social media, leaflets, and
-                                    interpersonal relationship; the value of SSZZ Entertainment was five times more than
-                                    the initial investment after liquidation</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </section>
 
-        <section id="project">
+        <section id="project" class="section mt-5 container-fluid" data-hash="section-4">
+            <!-- container-fluid -->
+            <h2 class="title">Projects</h2>
+            <div class="row">
+                <div class="pro1 col-12 col-md-4">
+                    <!-- <a href="starship.html"><img src="images/reactredux.png" alt="image" class="img-responsive"></a> -->
+                </div>
+                <div class="pro1 col-12 col-md-4">
+                    <!-- <a href="starship.html"><img src="images/Vue-JS.jpg" alt="image" class="img-responsive"></a> -->
+                </div>
+                <div class="pro1 col-12 col-md-4">
+                    <!-- <a href="starship.html"><img src="images/laravel.jpg" alt="image" class="img-responsive"></a> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="pro2 col-12 col-md-3">
+                    <!-- <a href="starship.html"><img src="images/p1s.png" alt="image" class="img-responsive"></a> -->
+                </div>
+                <div class="col-md-6">
+                    <div class="pro3 col-12">
+                        <!-- <a href="organ-donation.html"><img src="images/organ-donation.png" alt="image"
+                                class="img-responsive"></a> -->
+                    </div>
+                    <div class="pro3 col-12">
+                        <!-- <a href="nike.html"><img src="images/7pros.png" alt="image" class="img-responsive"></a> -->
+                    </div>
+                </div>
+                <div class="pro2 col-12 col-md-3 p-2 float-right">
+                    <!-- <a href="resume.html"><img src="images/p2.png" alt="image" class="img-responsive"></a> -->
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section bg-gradient" data-hash="section-5">
+            <!-- <h2 class="title">Contact</h2> -->
             <div class="container-fluid">
-                <h2 class="title">Projects</h2>
-            </div>
-            <div class="awSlider projects">
-                <div id="carousel" class="carousel slide mx-auto eachPro" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/organ-donation.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title text-center mb-4">
+                            <h3 class="text-white">Have any Questions ?</h3>
+                            <p class="text-white-50">Please fill out the following form and we will get back to you
+                                shortly</p>
                         </div>
-                        <div class="carousel-item">
-                            <img src="images//8pro2.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center mt-4">
+                            <div class="contact-icon mb-2">
+                                <i class="mdi mdi-email-outline text-info h2"></i>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/banner.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <div class="contact-details text-white">
+                                <h5 class="text-white">E-mail</h5>
+                                <p class="text-white-50">example@abc.com</p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center mt-4">
+                            <div class="contact-icon mb-2">
+                                <i class="mdi mdi-cellphone-iphone text-info h2"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5 class="text-white">Phone</h5>
+                                <p class="text-white-50">012-345-6789</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="contact-content text-center mt-4">
+                            <div class="contact-icon mb-2">
+                                <i class="mdi mdi-map-marker text-info h2"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5 class="text-white">Address</h5>
+                                <p class="text-white-50">4413 Redbud Drive, New York</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10">
+                        <div class="custom-form p-5 bg-white">
+                            <div id="message"></div>
+                            <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input name="name" id="name" type="text" class="form-control"
+                                                placeholder="Enter your name...">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email">Email address</label>
+                                            <input name="email" id="email" type="email" class="form-control"
+                                                placeholder="Enter your email...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="subject">Subject</label>
+                                            <input name="subject" id="subject" type="text" class="form-control"
+                                                placeholder="Enter Subject...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="comments">Message</label>
+                                            <textarea name="comments" id="comments" rows="4" class="form-control"
+                                                placeholder="Enter your message..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 text-right">
+                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-danger"
+                                            value="Send Message">
+                                        <div id="simple-msg"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="contact">
-            <h2 class="title text-center">Contact</h2>
-            <form class="was-validation col-6 mx-auto" novalidate>
-                <div class="form-row">
-                    <div class="col-12 mb-3">
-                        <label for="validationCustom01">First name *</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
-                            required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Unvaild name!
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="validationCustom02">Last name *</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
-                            required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Unvaild name!
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="validationemail">Email *</label>
-                        <input type="text" class="form-control" id="validationemail" placeholder="Email"
-                            aria-describedby="emailHelp" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Fill correct email please!
-                        </div>
-                    </div>
-                    <div class="col-12 mb-4">
-                        <label for="validationTextarea">Message *</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="Leave message here"
-                            required></textarea>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Please enter a message in the textarea.
-                        </div>
-                    </div>
+
+            <div id="footerCon">
+                <h2 class="hide">mainFooter</h2>
+                <div class="cpy-right">
+                    <p>© 2018 An Liu Resume. All rights reserved | Design by An Liu.</p>
                 </div>
-                <div class="pb-4">
-                    <button class="btn btn-primary submitBtn col-5" type="submit">Submit form</button>
-                </div>
-            </form>
+            </div>
         </section>
     </div>
-
-    <footer id="footerCon">
-        <h2 class="hide">mainFooter</h2>
-        <div class="cpy-right">
-            <p>© 2018 An Liu Resume. All rights reserved | Design by An Liu.</p>
-        </div>
-    </footer>
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
+    <script src="js/jquery_flexslider.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-        integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/smartscroll.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
-        //skillSection animation
-        window.onscroll = function () {
-            var oWrap = document.querySelector('#box');
-            var oImg = oWrap.children;
-            var deg = 360 / oImg.length;
-            var roX = -10;
-            var roY = 0;
-            var x, y, x_, y_, xN, yN, time = null;
-            for (var i = 0; i < oImg.length; i++) {
-                oImg[i].style.transform = 'rotateY(' + i * deg + 'deg) translateZ(350px)';
-                oImg[i].style.transition = ' all 1s ' + (oImg.length - i - 1) * 0.1 + 's';
-                oImg[i].ondragstart = function () {
-                    return false;
-                }
-            }
-            document.onmousedown = function (e) {
-                clearInterval(time);
-                e = e || window.event;
-                x_ = e.clientX;
-                y_ = e.clientY;
-                this.onmousemove = function (e) {
-                    e = e || window.event;
-                    x = e.clientX;
-                    y = e.clientY;
-                    xN = x - x_;
-                    yN = y - y_;
-                    roY += xN * 0.2;
-                    roX -= yN * 0.2;
-                    oWrap.style.transform = 'perspective(800px) rotateX(' + roX + 'deg) rotateY(' + roY + 'deg)';
-                    x_ = e.clientX;
-                    y_ = e.clientY;
-                }
-                this.onmouseup = function () {
-                    this.onmousemove = null;
-                    time = setInterval(function () {
-                        xN *= 0.95;
-                        yN *= 0.95;
-                        if (Math.abs(xN) < 0.1 && Math.abs(yN) < 0.1) {
-                            clearInterval(time);
-                        }
-                        roY += xN * 0.2;
-                        roX -= yN * 0.2;
-                        oWrap.style.transform = 'perspective(800px) rotateX(' + roX + 'deg) rotateY(' + roY + 'deg)';
-                    }, 30)
-                }
-            }
-        }
-
+        // document.body.style.overflow="hidden";
     </script>
 </body>
 
