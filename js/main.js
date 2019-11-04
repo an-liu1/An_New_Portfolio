@@ -52,10 +52,17 @@
         $(".experience-history-list").flexslider(sliderCon)
     }
 
+    initSmartScroll = () => {
+        if($(window).width() > 420){
+            $.smartscroll();
+        }
+    }
+
+
     this.initStickyMenu();
     this.initSmoothLink();
     this.initScrollspy();
-    $.smartscroll();
     new WOW().init();
     this.sliderControll();
+    this.initSmartScroll();
 })();
