@@ -58,6 +58,11 @@
         }
     }
 
+    closePortrait = () => {
+        $('.closePortrait').on('click', ()=>{
+            $('.my').addClass('hide')
+        })
+    }
 
     this.initStickyMenu();
     this.initSmoothLink();
@@ -65,4 +70,5 @@
     new WOW().init();
     this.sliderControll();
     this.initSmartScroll();
+    this.closePortrait();
 })();
