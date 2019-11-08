@@ -125,7 +125,9 @@ p {
 .banner {
 	width: 100%;
 	height: 965px;
-	background-image: url(../images/banner5.gif);
+    background-image: url(../images/banner5.gif);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 
@@ -136,10 +138,20 @@ p {
 	top: 200px;
 	left: -20px;
 }
-
+.my-image {
+    margin-left: 20px;
+}
 .my-image img {
 	max-width: 100%;
-	vertical-align: middle;
+    vertical-align: middle;
+}
+
+.closePortrait{
+    float: right;
+    padding: 5px;
+}
+.closePortrait:hover{
+    cursor: pointer;
 }
 
 h3 {
@@ -254,7 +266,6 @@ h5 {
 
 .home-title {
 	margin-top: 200px;
-	margin-right: 200px;
 	max-width: 770px;
 	letter-spacing: 8px;
 	text-align: center;
@@ -407,21 +418,29 @@ h5 {
 	font-size: 1.25em;
 	padding: 30px 0;
 }
+/* #info img {
+    width: 103.08px;
+    height: 73.08px;
+} */
 .skills{
     padding-top: 20px;
 }
 
 
 /* experience */
-
+#experiences{
+    background-image: url(../images/experience_bckgrd.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;  
+}
 .experience-history {
 	/* background: url(../images/bg_about_history.jpg) no-repeat center fixed; */
 	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .experience-history-list {
-	position: relative;
+    position: relative;
 }
 
 .experience-history-list .flex-viewport {
@@ -648,8 +667,13 @@ h5 {
 }
 
 /* projects */
+#project {
+    background-image: url(../images/project_bckgrd.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 #project .title{
-    padding-top: 10px;
+    padding-top: 3.5rem;
 }
 .pro1{
     display: block;
@@ -714,7 +738,9 @@ h5 {
   .custom-form .form-group textarea.form-control {
     height: auto;
   }
-  
+  .contact-icon{
+    color:white;
+}
   .error {
     margin: 8px 0px;
     display: none;
@@ -759,7 +785,8 @@ h5 {
 #footerCon {
 	background-color: #2b2b2b;
     text-align: center;
-    margin-top: 45px;
+    width: 100%;
+    margin-top: 50px;
 }
 
 .cpy-right {
@@ -767,7 +794,9 @@ h5 {
 	font-size: 0.875em;
 	letter-spacing: 1px;
 	display: block;
-	line-height: 1.8em;
+    line-height: 1.8em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cpy-right p {
@@ -795,7 +824,23 @@ h5 {
 		max-width: 65%;
 	}
 }
-
+@media (max-width: 1024px) {
+	#info .na {
+        margin-top: 30px;
+    }
+    .skillSectionDes img {
+        margin-top: 20px;
+    }
+    .experience-history{
+        margin-top: 250px;
+    }
+    .projectTab{
+        margin-top: 250px;
+    }
+    #footerCon {
+        margin-top: 160px;
+    }
+}
 @media (min-width: 200px) and (max-width: 768px) {
 	.navbar-custom {
 		margin-top: 0px;
@@ -831,5 +876,41 @@ h5 {
 	}
 	.mo-mb-20 {
 		margin-bottom: 20px !important;
-	}
+    }
+    #info .na {
+        font-size: 16px;
+    }
+    .experience-history{
+        margin-top: 100px;
+    }
+    .projectTab{
+        margin-top: 0;
+    }
+    #footerCon {
+        margin-top: 50px;
+    }
+}
+@media (min-width: 200px) and (max-width: 414px) {
+    .home-title {
+        margin-top: 100px;
+    }
+    .ro {
+        display: none;
+    }
+    .my {
+        left: 50px;
+    }
+    .title {
+        margin-bottom: 20px;
+        padding-top: 5px;
+    }
+    #experiences{
+        background: none;
+    }
+    #project {
+        background: none;
+    }
+    #footerCon {
+        margin-top: 20px;
+    }
 }

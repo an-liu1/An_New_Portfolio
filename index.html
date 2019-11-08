@@ -18,8 +18,9 @@
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <!-- bootstrap framework -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- bootstrap ekko-lightbox -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
         integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" /> -->
@@ -110,11 +111,12 @@
             </section>
         </div>
         <!-- home end -->
+
         <section class="my portrait">
             <div class="my-image">
                 <img src="images/portrait2.jpg" alt="portrait">
             </div>
-            <!-- <div><i class="fas fa-times-circle"></i></div> -->
+            <span class="closePortrait"><i class="far fa-times-circle"></i></span>
             <div class="my-info">
                 <h3>AN LIU</h3>
                 <h5>WEB DEVELOPER</h5>
@@ -140,12 +142,12 @@
                 <h1 class="hide">An(Andy) Liu information</h1>
                 <h2 class="title Sp-title">About Me</h2>
                 <div class="row">
-                    <div class="col-md-7 wow bounceInLeft" data-wow-delay="0.5s">
+                    <div class="col-12 col-xl-7 wow bounceInLeft" data-wow-delay="0.5s">
                         <video controls poster="images/video_poster.png">
                             <source src="video/aboutme.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-md-5 wow bounceInRight" data-wow-delay="0.5s">
+                    <div class="col-12 col-xl-5 wow bounceInRight" data-wow-delay="0.5s">
                         <p class="na">Experienced web developer and web designer looking for a web developer
                             position, with a specialty in logical thinking and code writing. An energetic,
                             results-driven individual with proven skills in web development using the latest
@@ -157,47 +159,111 @@
                 </div>
 
                 <h2 class="title skills">My Skills</h2>
-                <div class="row">
-                    <img class="col-md-1 wow bounce" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
+                <div class="skillSectionDes d-none d-lg-block">
+                    <div class="row mt-5 mb-4">
+                        <img class="col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/HTML5.svg" alt="html5" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/CSS3.svg" alt="css3" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/java-script.svg" alt="java-script" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/xml.svg" alt="xml" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/SASS.svg" alt="sass" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/gulp.svg" alt="gulp" class="img-fluid">
+                    </div>
+                    <div class="row mb-4">
+                        <img class="col-lg-1 offset-lg-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/react.svg" alt="react" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/vue.svg" alt="vue" class="img-fluid">
+                    </div>
+                    <div class="row">
+                        <img class="col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/jQuery.svg" alt="jquery" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/github.svg" alt="github" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/laravel.svg" alt="laravel" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/mysql.svg" alt="mysql" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
+                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/php.svg" alt="php" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="skillSectionTablet d-none d-md-block d-lg-none">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
                         alt="html5" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow flash" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/CSS3.svg" alt="css3" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow pulse" data-wow-delay="0.5s" data-wow-iteration="2"
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/CSS3.svg"
+                        alt="css3" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
                         src="images/java-script.svg" alt="java-script" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow rubberBand" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/xml.svg" alt="xml" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow shake" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/SASS.svg" alt="sass" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow headShake" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/gulp.svg" alt="gulp" class="img-fluid">
-                </div>
-                <div class="row">
-                    <img class="col-md-1 offset-md-4 wow bounceInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/react.svg" alt="react" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow zoomIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/vue.svg" alt="vue" class="img-fluid">
-                </div>
-                <div class="row">
-                    <img class="col-md-1 wow fadeIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/jQuery.svg" alt="jquery" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow fadeInRightBig" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/github.svg" alt="github" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow heartBeat" data-wow-delay="0.5s" data-wow-iteration="2"
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/xml.svg"
+                        alt="xml" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/SASS.svg"
+                        alt="sass" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/gulp.svg"
+                        alt="gulp" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/react.svg"
+                        alt="react" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/vue.svg"
+                        alt="vue" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/jQuery.svg"
+                        alt="jquery" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/github.svg"
+                        alt="github" class="img-fluid">
+                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
                         src="images/laravel.svg" alt="laravel" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
                         src="images/mysql.svg" alt="mysql" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow slideInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
+                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
                         src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                    <img class="col-md-1 offset-md-1 wow zoomInLeft" data-wow-delay="0.5s" data-wow-iteration="2"
+                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
                         src="images/php.svg" alt="php" class="img-fluid">
                 </div>
+
+                <div class="skillSectionPhone d-md-none">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
+                            alt="html5" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/CSS3.svg"
+                            alt="css3" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/java-script.svg" alt="java-script" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/xml.svg"
+                            alt="xml" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/SASS.svg"
+                            alt="sass" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/gulp.svg"
+                            alt="gulp" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/react.svg"
+                            alt="react" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/vue.svg"
+                            alt="vue" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/jQuery.svg"
+                            alt="jquery" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/github.svg"
+                            alt="github" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/laravel.svg" alt="laravel" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/mysql.svg" alt="mysql" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
+                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/php.svg" alt="php" class="img-fluid">
+                    </div>
         </section>
 
         <section id="experiences" class="section" data-hash="section-3">
             <div class="container-fluid">
                 <h1 class="hide">An(Andy) Liu resume</h1>
                 <h2 class="title">Experience</h2>
-                <div class="experience-history">
+                <div class="experience-history d-none d-md-block">
                     <div class="experience-history-list wow zoomIn" data-wow-delay=".5s">
                         <div class="flex-viewport">
                             <ul class="slides clearfix list">
@@ -330,38 +396,157 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="d-block d-md-none">
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Media Design</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2017.09-2019.04</h6>
+                            <p class="card-text"><b>Fanshawe College</b><br>
+                                <b>Extra-Curricular Involvement</b>:<br>
+                                • Peer Tutor, The President of Fanshawe Chinese Club<br>
+                                <b>Coursework</b>:<br>
+                                • Multimeida and The Internet <br>
+                                • Digital Media Theory & Project Management<br>
+                                • Web development
+                                • Multimedia Production<br>
+                                • Multimedia Authoring</p>
+                        </div>
+                    </div>
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Bachelor of Engineering – Software Engineering</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2012.09-2016.06</h6>
+                            <p class="card-text"><b>JiangXi Agriculture University</b><br>
+                                <b>Extra-Curricular Involvement</b>:<br>
+                                • Startup CEO, Freshman Counselor, The Office Director of Student Union<br>
+                                <b>Coursework</b>:<br>
+                                • Web development technology (Java or .net)
+                                • Web development foundation
+                                • JAVA program design<br>
+                                • Large database technology (oracle)
+                                • Database principles and application</p>
+                        </div>
+                    </div>
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Front End Developer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2019.06 - Current</h6>
+                            <p class="card-text"><b>SomoPlay Inc.</b><br>
+                                • Working with templating systems in designing new content in the website<br>
+                                • Transformming basic web code into Vue,js/React.js framework<br>
+                                • Discovering and writing new js feature with third party packages and Javascript
+                                ES6/ES7<br>
+                                • Designing and writing CMS system with API</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Designer and Developer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2019.02 - 2019.05</h6>
+                            <p class="card-text"><b>Chuck Howard Associates Inc.</b><br>
+                                • Assisted clients in understanding the feasible options in updating and helped them
+                                select the right service plans for their requirements to
+                                redesign (category, clear structure, obvious product feature).<br>
+                                • Rebuilt the web code in MVC design pattern for later maintenance and updating.<br>
+                                • Created the database in MySQL and categorized data by using the linking tables.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Developer && Member</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2019.10- Current</h6>
+                            <p class="card-text"><b>Chinese Project Management Professionals Association of
+                                    Canada(CPMP)</b><br>
+                                • Website maintenance and update<br>
+                                • Functions updating(payment interface, activity registration port) <br>
+                                • Assisted with the aspect of activities organization in CPMP</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">President</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2018.02-2019.04</h6>
+                            <p class="card-text"><b>Fanshawe Chinese Socirty</b><br>
+                                • Planned and organized activities each month to help new students integrate into
+                                campus and Canada life as soon as possible.<br>
+                                • Built FCS official website and social media account<br>
+                                • Organized and hold special event --- Asian Lunar New Year's Party and Mid-Autumn
+                                Festival gala, etc. to unit international students.</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg p-2 bg-white rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup CEO</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2014.10-2015.08</h6>
+                            <p class="card-text"><b>SanShiZuoZhu Entertainment(SSZZ)</b><br>
+                                • Founded SSZZ Entertainment, a platform for student societies to organize
+                                networking events.<br>
+                                • Advertised and promoted the brand to the whole city by social media, leaflets, and
+                                interpersonal relationship; the value of SSZZ Entertainment was five times more than
+                                the initial investment after liquidation</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="project" class="section mt-5 container-fluid" data-hash="section-4">
+        <section id="project" class="section" data-hash="section-4">
             <!-- container-fluid -->
-            <h2 class="title">Projects</h2>
-            <div class="row">
-                <div class="pro1 col-12 col-md-4">
-                    <!-- <a href="starship.html"><img src="images/reactredux.png" alt="image" class="img-responsive"></a> -->
-                </div>
-                <div class="pro1 col-12 col-md-4">
-                    <!-- <a href="starship.html"><img src="images/Vue-JS.jpg" alt="image" class="img-responsive"></a> -->
-                </div>
-                <div class="pro1 col-12 col-md-4">
-                    <!-- <a href="starship.html"><img src="images/laravel.jpg" alt="image" class="img-responsive"></a> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="pro2 col-12 col-md-3">
-                    <!-- <a href="starship.html"><img src="images/p1s.png" alt="image" class="img-responsive"></a> -->
-                </div>
-                <div class="col-md-6">
-                    <div class="pro3 col-12">
-                        <!-- <a href="organ-donation.html"><img src="images/organ-donation.png" alt="image"
+            <div class="container-fluid">
+                <h2 class="title">Projects</h2>
+                <div class="projectTab d-none d-md-block">
+                    <!-- <h2 class="title text-center mb-5 d-none d-md-block d-xl-none">Projects</h2> -->
+                    <div class="row">
+                        <div class="pro1 col-12 col-md-4 wow bounceInLeft" data-wow-delay=".4s">
+                            <!-- <a href="starship.html"><img src="images/reactredux.png" alt="image" class="img-responsive"></a> -->
+                        </div>
+                        <div class="pro1 col-12 col-md-4 wow bounceInDown" data-wow-delay=".4s">
+                            <!-- <a href="starship.html"><img src="images/Vue-JS.jpg" alt="image" class="img-responsive"></a> -->
+                        </div>
+                        <div class="pro1 col-12 col-md-4 wow bounceInRight" data-wow-delay=".4s">
+                            <!-- <a href="starship.html"><img src="images/laravel.jpg" alt="image" class="img-responsive"></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pro2 col-12 col-md-3 wow fadeInLeft" data-wow-delay=".4s">
+                            <!-- <a href="starship.html"><img src="images/p1s.png" alt="image" class="img-responsive"></a> -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pro3 col-12 wow zoomIn" data-wow-delay=".4s">
+                                <!-- <a href="organ-donation.html"><img src="images/organ-donation.png" alt="image"
                                 class="img-responsive"></a> -->
-                    </div>
-                    <div class="pro3 col-12">
-                        <!-- <a href="nike.html"><img src="images/7pros.png" alt="image" class="img-responsive"></a> -->
+                            </div>
+                            <div class="pro3 col-12 wow zoomIn" data-wow-delay=".4s">
+                                <!-- <a href="nike.html"><img src="images/7pros.png" alt="image" class="img-responsive"></a> -->
+                            </div>
+                        </div>
+                        <div class="pro2 col-12 col-md-3 p-2 float-right wow fadeInLeft" data-wow-delay=".4s">
+                            <!-- <a href="resume.html"><img src="images/p2.png" alt="image" class="img-responsive"></a> -->
+                        </div>
                     </div>
                 </div>
-                <div class="pro2 col-12 col-md-3 p-2 float-right">
-                    <!-- <a href="resume.html"><img src="images/p2.png" alt="image" class="img-responsive"></a> -->
+
+                <div class="projectPhone d-md-none">
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
+                    <a href="starship.html"><img src="images/roku-device.png" alt="image" class="img-responsive"
+                            width="100%"></a>
                 </div>
             </div>
         </section>
@@ -370,66 +555,66 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="title text-center mb-4">
+                    <div class="col-xl-12">
+                        <div class="title text-center pt-5 mb-4">
                             <h3 class="text-white">Have any Questions ?</h3>
                             <p class="text-white-50">Please fill out the following form and we will get back to you
-                                shortly</p>
+                                shortly <br /> or contact me by:</p>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-4">
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-12 col-xl-4">
                         <div class="contact-content text-center mt-4">
                             <div class="contact-icon mb-2">
-                                <i class="mdi mdi-email-outline text-info h2"></i>
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-details text-white">
                                 <h5 class="text-white">E-mail</h5>
-                                <p class="text-white-50">example@abc.com</p>
+                                <!-- <p class="text-white-50">andyvviiar@gmail.com</p> -->
                             </div>
                         </div>
                     </div>
                     <!-- end col -->
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-12 col-xl-4">
                         <div class="contact-content text-center mt-4">
                             <div class="contact-icon mb-2">
-                                <i class="mdi mdi-cellphone-iphone text-info h2"></i>
+                                <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-details">
                                 <h5 class="text-white">Phone</h5>
-                                <p class="text-white-50">012-345-6789</p>
+                                <!-- <p class="text-white-50">519-697-4518</p> -->
                             </div>
                         </div>
                     </div>
                     <!-- end col -->
-                    <div class="col-lg-4">
+                    <div class="col-md-4 col-lg-12 col-xl-4">
                         <div class="contact-content text-center mt-4">
                             <div class="contact-icon mb-2">
-                                <i class="mdi mdi-map-marker text-info h2"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-details">
                                 <h5 class="text-white">Address</h5>
-                                <p class="text-white-50">4413 Redbud Drive, New York</p>
+                                <!-- <p class="text-white-50">Toronto, ON</p> -->
                             </div>
                         </div>
                     </div>
                     <!-- end col -->
                 </div>
                 <div class="row justify-content-center mt-5">
-                    <div class="col-lg-10">
+                    <div class="col-xl-10">
                         <div class="custom-form p-5 bg-white">
                             <div id="message"></div>
                             <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-xl-6">
                                         <div class="form-group">
                                             <label for="name">Name</label>
                                             <input name="name" id="name" type="text" class="form-control"
                                                 placeholder="Enter your name...">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-xl-6">
                                         <div class="form-group">
                                             <label for="email">Email address</label>
                                             <input name="email" id="email" type="email" class="form-control"
@@ -439,7 +624,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-xl-12">
                                         <div class="form-group">
                                             <label for="subject">Subject</label>
                                             <input name="subject" id="subject" type="text" class="form-control"
@@ -449,7 +634,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-xl-12">
                                         <div class="form-group">
                                             <label for="comments">Message</label>
                                             <textarea name="comments" id="comments" rows="4" class="form-control"
@@ -459,7 +644,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-lg-12 text-right">
+                                    <div class="col-xl-12 text-right">
                                         <input type="submit" id="submit" name="send" class="submitBnt btn btn-danger"
                                             value="Send Message">
                                         <div id="simple-msg"></div>
