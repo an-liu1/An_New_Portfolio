@@ -1,7 +1,7 @@
 body {
 	font-family: 'Bree Serif', serif;
 	font-size: 14px;
-	background-image: url(../images/bckgrd.png);
+    background-image: url(../images/bckgrd.png);
 }
 
 h1,
@@ -70,7 +70,7 @@ p {
 	color: #ffffff;
 }
 
-.navbar-custom .navbar-nav .nav-item.active .nav-link {
+.navbar-custom .navbar-nav .nav-item .nav-link.active {
 	color: #ffffff;
 }
 
@@ -109,7 +109,7 @@ p {
 	color: #dc0a18;
 }
 
-.nav-sticky.navbar-custom .navbar-nav .nav-item.active .nav-link {
+.nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link.active {
 	color: #dc0a18;
 }
 
@@ -862,7 +862,7 @@ h5 {
 		margin: 0px;
 		padding: 6px 0px;
 	}
-	.navbar-custom .navbar-nav .nav-item.active .nav-link {
+	.navbar-custom .navbar-nav .nav-item .nav-link.active {
 		color: #dc0a18 !important;
 	}
 	.navbar-toggler {

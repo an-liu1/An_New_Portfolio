@@ -30,11 +30,11 @@
         });
     };
 
-    initScrollspy = () => {
-        $("#navbarCollapse").scrollspy({
-            offset: 50
-        });
-    };
+    // initScrollspy = () => {
+    //     $("#navbarCollapse").scrollspy({
+    //         offset: 937
+    //     });
+    // };
 
     sliderControll = () => {
         var sliderCon = {
@@ -54,7 +54,9 @@
 
     initSmartScroll = () => {
         if($(window).width() > 420){
-            $.smartscroll();
+            $.smartscroll({
+                autoHash: true
+            });
         }
     }
 
@@ -66,7 +68,7 @@
 
     this.initStickyMenu();
     this.initSmoothLink();
-    this.initScrollspy();
+    // this.initScrollspy();
     new WOW().init();
     this.sliderControll();
     this.initSmartScroll();

@@ -19,17 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <!-- bootstrap framework -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- bootstrap ekko-lightbox -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-        integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" /> -->
 
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
     <!--Navbar-->
     <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
         <h1 class="hide">Main Navigation</h1>
@@ -46,7 +41,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#home" class="nav-link font-weight-bold">HOME</a>
                     </li>
                     <li class="nav-item">
@@ -69,73 +64,65 @@
     </nav>
     <!-- Navbar End -->
 
+    <section class="my portrait">
+        <div class="my-image">
+            <img src="images/portrait2.jpg" alt="portrait">
+        </div>
+        <span class="closePortrait"><i class="far fa-times-circle"></i></span>
+        <div class="my-info">
+            <h3>AN LIU</h3>
+            <h5>WEB DEVELOPER</h5>
+            <ul class="address">
+                <li><b>NAME :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An(Andy) Liu</li>
+                <li><b>PHONE :</b> &nbsp;&nbsp;&nbsp; +1 519 697 4518</li>
+                <li><b>ADDRESS :</b> Toronto, ON Canada</li>
+                <li><b>E-MAIL :</b> &nbsp;&nbsp;&nbsp;&nbsp;andyvviiar@gmail.com</li>
+            </ul>
+            <div class="social-touch">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100013376169698"><i
+                        class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
+                        class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/an-liu1"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
     <div class="section-wrapper">
-        <div class="section" data-hash="section-1" data-spy="scroll" data-target="#navbar-example" data-offset="0">
-            <!-- home start -->
-            <section class="bg-home banner" id="home">
-                <div class="container-fluid">
-                    <h1 class="hide">HomePage</h1>
-                    <div class="home-center">
-                        <div class="home-desc-center">
-                            <div class="container-fluid">
-                                <div class="row align-items-center">
-                                    <div class="col-12">
-                                        <div class="home-title mo-mb-20">
-                                            <p class="mb-4 my_name text-white">An Liu</p>
-                                            <p class="text-white web_developer mb-5">Web Developer & Designer</p>
-                                            <div class="social-icons">
-                                                <ul class="top-links">
-                                                    <li><a target="_blank"
-                                                            href="https://www.facebook.com/	profile.php?id=100013376169698"><i
-                                                                class="fab fa-facebook"></i></a></li>
-                                                    <li><a target="_blank" href="http://www.twitter.com"><i
-                                                                class="fab fa-twitter"></i></a></li>
-                                                    <li><a target="_blank"
-                                                            href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
-                                                                class="fab fa-linkedin"></i></a></li>
-                                                    <li><a target="_blank" href="https://github.com/an-liu1"><i
-                                                                class="fab fa-github"></i></a></li>
-                                                </ul>
-                                            </div>
+        <section class="bg-home banner section" id="home" data-hash="section-1">
+            <div class="container-fluid">
+                <h1 class="hide">HomePage</h1>
+                <div class="home-center">
+                    <div class="home-desc-center">
+                        <div class="container-fluid">
+                            <div class="row align-items-center">
+                                <div class="col-12">
+                                    <div class="home-title mo-mb-20">
+                                        <p class="mb-4 my_name text-white">An Liu</p>
+                                        <p class="text-white web_developer mb-5">Web Developer & Designer</p>
+                                        <div class="social-icons">
+                                            <ul class="top-links">
+                                                <li><a target="_blank"
+                                                        href="https://www.facebook.com/profile.php?id=100013376169698"><i
+                                                            class="fab fa-facebook"></i></a></li>
+                                                <li><a target="_blank" href="http://www.twitter.com"><i
+                                                            class="fab fa-twitter"></i></a></li>
+                                                <li><a target="_blank"
+                                                        href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
+                                                            class="fab fa-linkedin"></i></a></li>
+                                                <li><a target="_blank" href="https://github.com/an-liu1"><i
+                                                            class="fab fa-github"></i></a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end row -->
                             </div>
-                            <!-- end container-fluid -->
                         </div>
                     </div>
                 </div>
                 <a href="#info" class="roo"><img src="images/rows.svg" class="ro animated infinite bounce" alt="rows"
                         width="40"></a>
-            </section>
-        </div>
-        <!-- home end -->
-
-        <section class="my portrait">
-            <div class="my-image">
-                <img src="images/portrait2.jpg" alt="portrait">
-            </div>
-            <span class="closePortrait"><i class="far fa-times-circle"></i></span>
-            <div class="my-info">
-                <h3>AN LIU</h3>
-                <h5>WEB DEVELOPER</h5>
-                <ul class="address">
-                    <li><b>NAME :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An(Andy) Liu</li>
-                    <li><b>PHONE :</b> &nbsp;&nbsp;&nbsp; +1 519 697 4518</li>
-                    <li><b>ADDRESS :</b> Toronto, ON Canada</li>
-                    <li><b>E-MAIL :</b> &nbsp;&nbsp;&nbsp;&nbsp;andyvviiar@gmail.com</li>
-                </ul>
-                <div class="social-touch">
-                    <a target="_blank" href="https://www.facebook.com/	profile.php?id=100013376169698"><i
-                            class="fab fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/an-liu-51b95b156/"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a target="_blank" href="https://github.com/an-liu1"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
         </section>
-
 
         <section id="info" class="section" data-hash="section-2">
             <div class="container-fluid">
@@ -161,109 +148,110 @@
                 <h2 class="title skills">My Skills</h2>
                 <div class="skillSectionDes d-none d-lg-block">
                     <div class="row mt-5 mb-4">
-                        <img class="col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/HTML5.svg" alt="html5" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/CSS3.svg" alt="css3" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/java-script.svg" alt="java-script" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/xml.svg" alt="xml" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/SASS.svg" alt="sass" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/gulp.svg" alt="gulp" class="img-fluid">
+                        <img class="img-fluid col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/HTML5.svg" alt="html5">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/CSS3.svg" alt="css3">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/java-script.svg" alt="java-script">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/xml.svg" alt="xml">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/SASS.svg" alt="sass">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/gulp.svg" alt="gulp">
                     </div>
                     <div class="row mb-4">
-                        <img class="col-lg-1 offset-lg-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/react.svg" alt="react" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/vue.svg" alt="vue" class="img-fluid">
+                        <img class="img-fluid col-lg-1 offset-lg-4 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/react.svg" alt="react">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/vue.svg" alt="vue">
                     </div>
                     <div class="row">
-                        <img class="col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/jQuery.svg" alt="jquery" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/github.svg" alt="github" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/laravel.svg" alt="laravel" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/mysql.svg" alt="mysql" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                        <img class="col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/php.svg" alt="php" class="img-fluid">
+                        <img class="img-fluid col-lg-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                            src="images/jQuery.svg" alt="jquery">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/github.svg" alt="github">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/laravel.svg" alt="laravel">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/mysql.svg" alt="mysql">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/Bootstrap.svg" alt="bootstrap">
+                        <img class="img-fluid col-lg-1 offset-lg-1 wow rotateIn" data-wow-delay="0.5s"
+                            data-wow-iteration="2" src="images/php.svg" alt="php">
                     </div>
                 </div>
 
                 <div class="skillSectionTablet d-none d-md-block d-lg-none">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
-                        alt="html5" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/CSS3.svg"
-                        alt="css3" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/java-script.svg" alt="java-script" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/xml.svg"
-                        alt="xml" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/SASS.svg"
-                        alt="sass" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/gulp.svg"
-                        alt="gulp" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/react.svg"
-                        alt="react" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/vue.svg"
-                        alt="vue" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/jQuery.svg"
-                        alt="jquery" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/github.svg"
-                        alt="github" class="img-fluid">
-                    <img class="col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/laravel.svg" alt="laravel" class="img-fluid">
-                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/mysql.svg" alt="mysql" class="img-fluid">
-                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                    <img class="col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                        src="images/php.svg" alt="php" class="img-fluid">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/HTML5.svg" alt="html5">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/CSS3.svg" alt="css3">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/java-script.svg" alt="java-script">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/xml.svg" alt="xml">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/SASS.svg" alt="sass">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/gulp.svg" alt="gulp">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/react.svg" alt="react">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/vue.svg" alt="vue">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/jQuery.svg" alt="jquery">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/github.svg" alt="github">
+                    <img class="img-fluid col-1 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/laravel.svg" alt="laravel">
+                    <img class="img-fluid col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/mysql.svg" alt="mysql">
+                    <img class="img-fluid col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/Bootstrap.svg" alt="bootstrap">
+                    <img class="img-fluid col-1 mt-4 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/php.svg" alt="php">
                 </div>
 
                 <div class="skillSectionPhone d-md-none">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/HTML5.svg"
-                            alt="html5" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/CSS3.svg"
-                            alt="css3" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/java-script.svg" alt="java-script" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/xml.svg"
-                            alt="xml" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/SASS.svg"
-                            alt="sass" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/gulp.svg"
-                            alt="gulp" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/react.svg"
-                            alt="react" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/vue.svg"
-                            alt="vue" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/jQuery.svg"
-                            alt="jquery" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2" src="images/github.svg"
-                            alt="github" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/laravel.svg" alt="laravel" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/mysql.svg" alt="mysql" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/Bootstrap.svg" alt="bootstrap" class="img-fluid">
-                        <img class="col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
-                            src="images/php.svg" alt="php" class="img-fluid">
-                    </div>
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/HTML5.svg" alt="html5">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/CSS3.svg" alt="css3">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/java-script.svg" alt="java-script">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/xml.svg" alt="xml">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/SASS.svg" alt="sass">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/gulp.svg" alt="gulp">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/react.svg" alt="react">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/vue.svg" alt="vue">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/jQuery.svg" alt="jquery">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/github.svg" alt="github">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/laravel.svg" alt="laravel">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/mysql.svg" alt="mysql">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/Bootstrap.svg" alt="bootstrap">
+                    <img class="img-fluid col-2 mb-3 wow rotateIn" data-wow-delay="0.5s" data-wow-iteration="2"
+                        src="images/php.svg" alt="php">
+                </div>
+            </div>
         </section>
 
         <section id="experiences" class="section" data-hash="section-3">
             <div class="container-fluid">
                 <h1 class="hide">An(Andy) Liu resume</h1>
                 <h2 class="title">Experience</h2>
-                <div class="experience-history d-none d-md-block">
+                <div class="experience-history d-none d-xl-block">
                     <div class="experience-history-list wow zoomIn" data-wow-delay=".5s">
                         <div class="flex-viewport">
                             <ul class="slides clearfix list">
@@ -397,99 +385,109 @@
                     </div>
                 </div>
 
-                <div class="d-block d-md-none">
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Interactive Media Design</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2017.09-2019.04</h6>
-                            <p class="card-text"><b>Fanshawe College</b><br>
-                                <b>Extra-Curricular Involvement</b>:<br>
-                                • Peer Tutor, The President of Fanshawe Chinese Club<br>
-                                <b>Coursework</b>:<br>
-                                • Multimeida and The Internet <br>
-                                • Digital Media Theory & Project Management<br>
-                                • Web development
-                                • Multimedia Production<br>
-                                • Multimedia Authoring</p>
+                <div class="d-block d-xl-none">
+                    <div class="row">
+                        <h3 class="col-12 text-center">WORK EXPERIENCE</h3>
+                        <div class="col-12 col-md-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Front End Developer</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2019.06 - Current</h6>
+                                <p class="card-text"><b>SomoPlay Inc.</b><br>
+                                    • Working with templating systems in designing new content in the website<br>
+                                    • Transformming basic web code into Vue,js/React.js framework<br>
+                                    • Discovering and writing new js feature with third party packages and Javascript
+                                    ES6/ES7<br>
+                                    • Designing and writing CMS system with API</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Bachelor of Engineering – Software Engineering</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2012.09-2016.06</h6>
-                            <p class="card-text"><b>JiangXi Agriculture University</b><br>
-                                <b>Extra-Curricular Involvement</b>:<br>
-                                • Startup CEO, Freshman Counselor, The Office Director of Student Union<br>
-                                <b>Coursework</b>:<br>
-                                • Web development technology (Java or .net)
-                                • Web development foundation
-                                • JAVA program design<br>
-                                • Large database technology (oracle)
-                                • Database principles and application</p>
-                        </div>
-                    </div>
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Front End Developer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2019.06 - Current</h6>
-                            <p class="card-text"><b>SomoPlay Inc.</b><br>
-                                • Working with templating systems in designing new content in the website<br>
-                                • Transformming basic web code into Vue,js/React.js framework<br>
-                                • Discovering and writing new js feature with third party packages and Javascript
-                                ES6/ES7<br>
-                                • Designing and writing CMS system with API</p>
+
+                        <div class="col-12 col-md-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Designer and Developer</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2019.02 - 2019.05</h6>
+                                <p class="card-text"><b>Chuck Howard Associates Inc.</b><br>
+                                    • Assisted clients in understanding the feasible options in updating and helped them
+                                    select the right service plans for their requirements to
+                                    redesign (category, clear structure, obvious product feature).<br>
+                                    • Rebuilt the web code in MVC design pattern for later maintenance and updating.<br>
+                                    • Created the database in MySQL and categorized data by using the linking tables.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Designer and Developer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2019.02 - 2019.05</h6>
-                            <p class="card-text"><b>Chuck Howard Associates Inc.</b><br>
-                                • Assisted clients in understanding the feasible options in updating and helped them
-                                select the right service plans for their requirements to
-                                redesign (category, clear structure, obvious product feature).<br>
-                                • Rebuilt the web code in MVC design pattern for later maintenance and updating.<br>
-                                • Created the database in MySQL and categorized data by using the linking tables.
-                            </p>
+                    <div class="row">
+                        <h3 class="col-12 text-center">EDUCATION</h3>
+                        <div class="col-12 col-md-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive Media Design</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2017.09-2019.04</h6>
+                                <p class="card-text"><b>Fanshawe College</b><br>
+                                    <b>Extra-Curricular Involvement</b>:<br>
+                                    • Peer Tutor, The President of Fanshawe Chinese Club<br>
+                                    <b>Coursework</b>:<br>
+                                    • Multimeida and The Internet <br>
+                                    • Digital Media Theory & Project Management<br>
+                                    • Web development
+                                    • Multimedia Production<br>
+                                    • Multimedia Authoring</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Bachelor of Engineering – Software Engineering</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2012.09-2016.06</h6>
+                                <p class="card-text"><b>JiangXi Agriculture University</b><br>
+                                    <b>Extra-Curricular Involvement</b>:<br>
+                                    • Startup CEO, Freshman Counselor, The Office Director of Student Union<br>
+                                    <b>Coursework</b>:<br>
+                                    • Web development technology (Java or .net)
+                                    • Web development foundation
+                                    • JAVA program design<br>
+                                    • Large database technology (oracle)
+                                    • Database principles and application</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Developer && Member</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2019.10- Current</h6>
-                            <p class="card-text"><b>Chinese Project Management Professionals Association of
-                                    Canada(CPMP)</b><br>
-                                • Website maintenance and update<br>
-                                • Functions updating(payment interface, activity registration port) <br>
-                                • Assisted with the aspect of activities organization in CPMP</p>
+                    <div class="row d-block d-md-none d-lg-block">
+                        <h3 class="col-12 text-center">WORK AND VOLUNTEER EXPERIENCE</h3>
+                        <div class="col-12 col-lg-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Developer && Member</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2019.10- Current</h6>
+                                <p class="card-text"><b>Chinese Project Management Professionals Association of
+                                        Canada(CPMP)</b><br>
+                                    • Website maintenance and update<br>
+                                    • Functions updating(payment interface, activity registration port) <br>
+                                    • Assisted with the aspect of activities organization in CPMP</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">President</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2018.02-2019.04</h6>
-                            <p class="card-text"><b>Fanshawe Chinese Socirty</b><br>
-                                • Planned and organized activities each month to help new students integrate into
-                                campus and Canada life as soon as possible.<br>
-                                • Built FCS official website and social media account<br>
-                                • Organized and hold special event --- Asian Lunar New Year's Party and Mid-Autumn
-                                Festival gala, etc. to unit international students.</p>
+                        <div class="col-12 col-lg-6 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">President</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2018.02-2019.04</h6>
+                                <p class="card-text"><b>Fanshawe Chinese Socirty</b><br>
+                                    • Planned and organized activities each month to help new students integrate into
+                                    campus and Canada life as soon as possible.<br>
+                                    • Built FCS official website and social media account<br>
+                                    • Organized and hold special event --- Asian Lunar New Year's Party and Mid-Autumn
+                                    Festival gala, etc. to unit international students.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card shadow-lg p-2 bg-white rounded">
-                        <div class="card-body">
-                            <h5 class="card-title">Startup CEO</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2014.10-2015.08</h6>
-                            <p class="card-text"><b>SanShiZuoZhu Entertainment(SSZZ)</b><br>
-                                • Founded SSZZ Entertainment, a platform for student societies to organize
-                                networking events.<br>
-                                • Advertised and promoted the brand to the whole city by social media, leaflets, and
-                                interpersonal relationship; the value of SSZZ Entertainment was five times more than
-                                the initial investment after liquidation</p>
+                        <div class="col-12 card shadow-lg bg-white rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Startup CEO</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">2014.10-2015.08</h6>
+                                <p class="card-text"><b>SanShiZuoZhu Entertainment(SSZZ)</b><br>
+                                    • Founded SSZZ Entertainment, a platform for student societies to organize
+                                    networking events.<br>
+                                    • Advertised and promoted the brand to the whole city by social media, leaflets, and
+                                    interpersonal relationship; the value of SSZZ Entertainment was five times more than
+                                    the initial investment after liquidation</p>
+                            </div>
                         </div>
                     </div>
                 </div>
