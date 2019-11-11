@@ -44,6 +44,11 @@
             move: 1,
         }
         $(".experience-history-list").flexslider(sliderCon)
+        // $('.project').flexslider({
+        //     animation: "slide",
+        //     prevText: "<",
+        //     nextText: ">"
+        //   });
     }
 
     initSmartScroll = () => {

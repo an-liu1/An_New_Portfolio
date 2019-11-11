@@ -431,7 +431,8 @@ h5 {
     padding-top: 20px;
 }
 .skillSectionDes img{
-	padding: 0 !important;
+    /* padding: 0 !important; */
+    width: 73px;
 }
 
 
@@ -771,7 +772,7 @@ h5 {
 	.hovereffect:hover a.info {
 	-webkit-transition-delay:.2s;
 	transition-delay:.2s;
-	}
+    }
 
 /* contact */
 #contact {
@@ -780,7 +781,7 @@ h5 {
 .bg-gradient {
     /* background: -webkit-gradient(linear, right top, left top, from(#673ab7), to(#3e1e8c));
     background: linear-gradient(to left, #673ab7, #3e1e8c); */
-    background: url(../images/banner.png) no-repeat;
+    background: url(../images/banner3.png) no-repeat;
   }
 .custom-form {
     -webkit-box-shadow: 0 10px 35px 0 rgba(154, 161, 171, 0.1);
