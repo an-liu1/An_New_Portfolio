@@ -30,12 +30,6 @@
         });
     };
 
-    // initScrollspy = () => {
-    //     $("#navbarCollapse").scrollspy({
-    //         offset: 937
-    //     });
-    // };
-
     sliderControll = () => {
         var sliderCon = {
             animation: "slide", 
@@ -66,11 +60,25 @@
         })
     }
 
+    initBacktoTop = () => {
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').fadeIn();
+            } else {
+                $('.back-to-top').fadeOut();
+            }
+        }); 
+        $('.back-to-top').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+    },
+
     this.initStickyMenu();
     this.initSmoothLink();
-    // this.initScrollspy();
     new WOW().init();
     this.sliderControll();
     this.initSmartScroll();
     this.closePortrait();
+    this.initBacktoTop();
 })();

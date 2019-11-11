@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROKU FLASHBACK</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- fontawesome icon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="project-body">
+    <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <h1 class="hide">Main Navigation</h1>
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="logo text-uppercase" href="#">
+                <img src="images/logo-light.png" alt="" class="logo-light" width="70" />
+                <img src="images/logo-dark.png" alt="" class="logo-dark" width="70" />
+            </a>
+            <button class="btn btn-danger navbar-btn"><a class="resumedownload" href="index.html#project">Back To
+                    Project</a></button>
+        </div>
+    </nav>
+    <div class="project-banner">
+        <img src="images/ruku-banner.png" alt="banner" class="img-fluid">
+    </div>
+
+
+    <section id="mainCon">
+        <h2>OVERVIEW</h2>
+        <div class="project-des">
+            <div class="project-video">
+                <img src="images/roku-device.png" alt="device show" class="img-fluid">
+            </div>
+            <div class="overview">
+                <p style="margin-top: 40px;">Roku Flashback --- this is an admin project based on the Roku, which
+                    provides a method for parents to supervise the item displayed in kid's page. Customers can log in
+                    their account, filter and select a movie, tv-show or audio based on user profile (adult or kids).
+                </p>
+                <p>There are three main part designs: parent, home, kids. And also some simplified layout change for
+                    login, detail, user select page.</p>
+            </div>
+        </div>
+
+        <div class="pro-info">
+            <div class="no1">
+                <div class="desktop">
+                    <h5>Project Link</h5>
+                    <a href="https://github.com/an-liu1/An_Liu-Chaochao_Li_AV_App">www.roku.git.com</a>
+                </div>
+                <div class="phone">
+                    <p>To view and read more about the application visit <a
+                            href="https://github.com/an-liu1/An_Liu-Chaochao_Li_AV_App">www.roku.git.com</a></p>
+                </div>
+            </div>
+            <div class="no2">
+                <h5>Type</h5>
+                <p>App Design, Development, UX/UI</p>
+            </div>
+            <div class="no3">
+                <h5>Date</h5>
+                <p>March 2019</p>
+            </div>
+            <div class="no4">
+                <h5>Technologies</h5>
+                <ul>
+                    <li><img src="images/HTML5.svg" alt="html5" class="img-fluid"></li>
+                    <li><img src="images/css.svg" alt="css" class="img-fluid"></li>
+                    <li><img src="images/java-script.svg" alt="java-script" class="img-fluid"></li>
+                    <li><img src="images/gulp.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/SASS.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/Node-JS.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/php.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/mysql.svg" alt="ae" class="img-fluid"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="web-device">
+            <h2>SHOWCASE</h2>
+            <div class="desktop">
+                <img src="images/roku-full.png" alt="fullsite" class=" fullsite img-fluid">
+            </div>
+
+            <div class="deviceshow">
+                <p>The parent page is putting everything inside, which includes Roku ads and Roku TV ads form Roku
+                    official site, and Movies, TV, Music, and News part. The original home page, which is in the
+                    userhomeComponent.js, performs as the detail page. Therefore, once custom click the exact movie, it
+                    will jump into this page and show the information and the custom also can get other movies’ details
+                    by clicking the thumbnail.</p>
+                <img src="images/roku-device2.png" alt="device show" class="img-fluid">
+            </div>
+            <img src="images/roku-device1.png" alt="device show" class="img-fluid">
+
+        </div>
+
+        <div class="brand-show">
+        </div>
+    </section>
+
+    <footer id="footerCon">
+        <h2 class="hide">mainFooter</h2>
+        <div class="cpy-right">
+            <p>© 2018 An Liu Resume. All rights reserved | Design by An Liu.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').fadeIn();
+            } else {
+                $('.back-to-top').fadeOut();
+            }
+        });
+        $('.back-to-top').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+    </script>
+</body>
+
+</html>

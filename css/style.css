@@ -1,0 +1,385 @@
+.hide{
+    display: none;
+}
+.back-to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+    border-radius: 3px;
+    background-color: #673ab7;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #ffffff;
+  }
+  
+  .back-to-top i {
+    color: #ffffff;
+    font-size: 22px;
+    display: block;
+    line-height: 30px;
+  }
+  
+#mainCon {
+    display: block;
+    background: #fff;
+  }
+  #mainCon h2, #mainCon h3, #mainCon h4, #mainCon h5 {
+    color: #dc0a18;
+  }
+  #mainCon p {
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+  }
+  #mainCon h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  #mainCon .project-des .project-video h3 {
+    text-align: center;
+  }
+  #mainCon .project-des .overview p {
+    text-indent: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .pro-info {
+    clear: both;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #mainCon .pro-info h4, #mainCon .pro-info h5 {
+    font-weight: bold;
+  }
+  #mainCon .pro-info .no1 a:hover {
+    color: #b50611;
+  }
+  #mainCon .pro-info .no1 .desktop {
+    display: none;
+  }
+  #mainCon .pro-info .no4 ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  #mainCon .pro-info .no4 ul li {
+    display: inline-block;
+    width: 40px;
+    margin-right: 20px;
+  }
+  #mainCon .web-device {
+    clear: both;
+  }
+  #mainCon .web-device p {
+    text-indent: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .web-device img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  #mainCon .web-device .desktop {
+    display: none;
+  }
+  #mainCon .brand-show {
+    margin: 20px 0;
+  }
+  #mainCon .brand-show .brand-id {
+    margin: 0 auto;
+  }
+  #mainCon .brand-show .brand-id img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  #mainCon .brand-show .brand-id p {
+    text-indent: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .brand-show .brand-guide p {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .brand-show .brand-guide a {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.125em;
+    color: #b50611;
+  }
+  #mainCon .brand-show .brand-guide a:hover {
+    color: black;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+  }
+  
+  @media screen and (min-width: 48em) {
+    .backToP a {
+      font-size: 1em;
+      line-height: 70px;
+    }
+  
+    .brand-show .brand-guide {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    .backBut1 {
+      display: block;
+    }
+  
+    #mainCon {
+      width: 70%;
+      margin: 0 auto;
+    }
+    #mainCon h2 {
+      font-size: 3em;
+    }
+    #mainCon .project-des .project-video {
+      float: left;
+      width: 58%;
+      margin-left: 2%;
+    }
+    #mainCon .project-des .project-video video {
+      width: 100%;
+    }
+    #mainCon .project-des .overview {
+      float: left;
+      width: 40%;
+    }
+    #mainCon .project-des .overview p {
+      line-height: 1.75em;
+      font-size: 20px;
+      display: block;
+      margin: 0 auto;
+    }
+    #mainCon .pro-info {
+      clear: both;
+      padding-top: 20px;
+      width: 100%;
+    }
+    #mainCon .pro-info h4, #mainCon .pro-info h5 {
+      font-weight: bold;
+    }
+    #mainCon .pro-info .no1 {
+      width: 23%;
+      float: left;
+      margin-right: 2%;
+    }
+    #mainCon .pro-info .no1 .desktop {
+      display: block;
+      margin-left: 20px;
+    }
+    #mainCon .pro-info .no1 .desktop a:hover {
+      color: #b50611;
+    }
+    #mainCon .pro-info .no1 .phone {
+      display: none;
+    }
+    #mainCon .pro-info .no2 {
+      width: 23%;
+      float: left;
+      margin-right: 4%;
+    }
+    #mainCon .pro-info .no3 {
+      width: 23%;
+      float: left;
+    }
+    #mainCon .pro-info .no4 {
+      width: 23%;
+      float: left;
+    }
+    #mainCon .pro-info .no4 ul {
+      list-style-type: none;
+      margin-left: 0;
+    }
+    #mainCon .pro-info .no4 ul li {
+      display: inline-block;
+      width: 40px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    #mainCon .web-device {
+      padding-top: 30px;
+      width: 95%;
+      margin: 0 auto;
+    }
+    #mainCon .web-device p {
+      font-size: 1.25em;
+      line-height: 1.75em;
+      width: 95%;
+      margin-bottom: 20px;
+    }
+    #mainCon .web-device .desktop {
+      display: block;
+    }
+    #mainCon .web-device .desktop .fullsite {
+      width: 31%;
+      float: left;
+    }
+    #mainCon .web-device .deviceshow {
+      width: 67%;
+      float: right;
+    }
+    #mainCon .brand-show {
+      clear: both;
+      padding-top: 30px;
+    }
+    #mainCon .brand-show p {
+      font-size: 1.25em;
+      line-height: 1.75em;
+    }
+    #mainCon .brand-show a {
+      font-size: 1.25em;
+    }
+  }
+  #mainCon .campaign {
+    margin: 20px 0;
+  }
+  #mainCon .campaign h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  #mainCon .campaign p {
+    text-indent: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .campaign img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+  }
+  #mainCon .lecture {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #mainCon .point-sys p {
+    text-indent: 40px;
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  #mainCon .point-sys img {
+    padding: 20px 20px;
+  }
+  
+  @media screen and (min-width: 48em) {
+    #mainCon .str-que {
+      width: 95%;
+      margin: 0 auto;
+    }
+    #mainCon .str-que p {
+      width: 95%;
+    }
+    #mainCon .str-que .stq1 {
+      float: left;
+      width: 47%;
+      margin-right: 3%;
+    }
+    #mainCon .str-que .stq2 {
+      float: left;
+      width: 50%;
+    }
+    #mainCon .poster {
+      clear: both;
+      padding-top: 20px;
+      width: 95%;
+      margin: 0 auto;
+    }
+    #mainCon .poster p {
+      width: 95%;
+    }
+    #mainCon .poster .poster1 {
+      width: 50%;
+      float: left;
+    }
+    #mainCon .poster .poster2 {
+      width: 50%;
+      float: right;
+    }
+    #mainCon .lecture {
+      clear: both;
+      padding-top: 20px;
+      width: 95%;
+      margin: 0 auto;
+    }
+    #mainCon .lecture p {
+      width: 95%;
+    }
+    #mainCon .point-sys .imgs {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    #mainCon .campaign p {
+      font-size: 1.25em;
+      line-height: 1.75em;
+    }
+    #mainCon .campaign .str-que .stq1 {
+      width: 41%;
+    }
+    #mainCon .campaign .str-que .stq2 {
+      width: 55%;
+    }
+    #mainCon .lecture p {
+      font-size: 1.25em;
+      line-height: 1.75em;
+    }
+    #mainCon .point-sys p {
+      font-size: 1.25em;
+      line-height: 1.75em;
+    }
+  }
+  #mainCon .web-device .desktop-nike {
+    display: block;
+  }
+  #mainCon .web-device .desktop-nike .plast {
+    display: none;
+  }
+  
+  @media screen and (min-width: 48em) {
+    #mainCon .project-des .project-video img {
+      margin: 0 auto;
+      display: block;
+    }
+    #mainCon .web-device .deviceshow-nike img {
+      width: 95%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  @media screen and (min-width: 64em) {
+    #mainCon .project-des .overview .nike-pro {
+      margin-top: 50px;
+    }
+    #mainCon .web-device .desktop-nike {
+      width: 60%;
+      float: left;
+    }
+    #mainCon .web-device .desktop-nike .plast {
+      text-align: right;
+      display: block;
+    }
+    #mainCon .web-device .deviceshow-nike {
+      float: left;
+      width: 30%;
+    }
+  }
+  
