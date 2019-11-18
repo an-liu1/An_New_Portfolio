@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCHOOL SYSTEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- fontawesome icon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="project-body">
+    <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <h1 class="hide">Main Navigation</h1>
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="logo text-uppercase" href="#">
+                <img src="images/logo-light.png" alt="" class="logo-light" width="70" />
+                <img src="images/logo-dark.png" alt="" class="logo-dark" width="70" />
+            </a>
+            <button class="btn btn-danger navbar-btn"><a class="resumedownload" href="index.html#project">Back To
+                    Project</a></button>
+        </div>
+    </nav>
+    <div class="project-banner">
+        <img src="images/vuejs.png" alt="banner" class="img-fluid">
+    </div>
+
+
+    <section id="mainCon">
+        <h2>OVERVIEW</h2>
+        <div class="project-des">
+            <div class="project-video">
+                <img src="images/content-management-gif.gif" alt="device show" class="img-fluid"
+                    style="border-radius: 40px;">
+                <!-- <p>A trailer is an advertisement or a commercial for a feature film that will be exhibited in the future at a cinema, the result of creative and technical work.</p> -->
+            </div>
+            <div class="overview">
+                <p class="nike-pro">Content Edit System --- This is the content edit system designed by Vue.js. The
+                    purpose of starting this project is to quickly build the website through editing web content on the
+                    admin page. Designing a specific database structure to identity different section of this website
+                    with multiple contents. The admin page is to do CRUD(create, read, update, delete) job to manage web
+                    content. Once there is any change in the backend system, it will render to the landing page
+                    immediately.</p>
+            </div>
+        </div>
+
+        <div class="pro-info">
+            <div class="no1">
+                <div class="desktop">
+                    <h5>Project Link</h5>
+                    <a
+                        href="https://github.com/an-liu1/Content-Edit-System---Vue">https://content-edit-system-vue.com</a>
+                </div>
+                <div class="phone">
+                    <p>To view and read more about the application visit <a
+                            href="https://github.com/an-liu1/Content-Edit-System---Vue">https://content-edit-system-vue.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="no2">
+                <h5>Type</h5>
+                <p>Web Design And Development, Branding</p>
+            </div>
+            <div class="no3">
+                <h5>Date</h5>
+                <p>September 2019</p>
+            </div>
+            <div class="no4">
+                <h5>Technologies</h5>
+                <ul>
+                    <li><img src="images/vue.svg" alt="html5" class="img-fluid"></li>
+                    <li><img src="images/HTML5.svg" alt="html5" class="img-fluid"></li>
+                    <li><img src="images/css.svg" alt="css" class="img-fluid"></li>
+                    <li><img src="images/java-script.svg" alt="java-script" class="img-fluid"></li>
+                    <li><img src="images/SASS.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/element.svg" alt="ae" class="img-fluid"></li>
+                    <li><img src="images/Bootstrap.svg" alt="ae" class="img-fluid"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="web-device">
+            <h2 class="text-center">SHOWCASE</h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="images/content-imac.png" alt="content-imac" class="img-fluid">
+                    <h4 class="text-center">Landing Page</h4>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="images/content-macbook.png" alt="content-macbook" class="img-fluid">
+                    <h3 class="text-center">Features</h3>
+                    <ul class="ml-5">
+                            <li>Log in/Log out (finished)</li>
+                            <li>User information edit (finished)</li>
+                            <li>All web sections' content management(CRUD) (finished)</li>
+                            <li>Images upload (finished)</li>
+                            <li>Pagination (finished)</li>
+                            <li>Landing Page (finished)</li>
+                            <li>Email Template/Sending Email (finished)</li>
+                            <li>Multiple Languages (developing)</li>
+                            <li>Section preview (developing)</li>
+                            <li>Create new section (developing)</li>
+                            <li>Create new website (developing)</li>
+                            <li>Section templates option (developing)</li>
+                            <li>Dashboard information Lists (developing)</li>
+                            <li>Sign up / Forget password (developing)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footerCon" style="clear: both;">
+        <h2 class="hide">mainFooter</h2>
+        <div class="cpy-right">
+            <p>© 2018 An Liu Resume. All rights reserved | Design by An Liu.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').fadeIn();
+            } else {
+                $('.back-to-top').fadeOut();
+            }
+        });
+        $('.back-to-top').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+    </script>
+</body>
+
+</html>
