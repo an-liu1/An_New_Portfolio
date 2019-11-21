@@ -33,7 +33,7 @@ if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
 
-$address = "example@example.net";
+$address = "andyliu@andyliu.ca";
 
 $e_subject = 'You have been contacted by ' . $name . '.';
 $e_body = "You have been contacted by $name. Their additional message is as follows." . PHP_EOL . PHP_EOL;
