@@ -78,6 +78,15 @@
         dynamicHeight: false,
         ie8: true
       });
+
+    //   var lethargy = new Lethargy();
+    //   $(window).bind('mousewheel DOMMouseScroll wheel MozMousePixelScroll', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation();
+    //     if(lethargy.check(e) !== false) {
+    //         // Do something with the scroll event
+    //     }
+    // });
     }
   };
 
