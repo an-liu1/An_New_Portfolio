@@ -1,0 +1,25 @@
+{
+  "name": "an_new_portfolio",
+  "version": "1.0.0",
+  "description": "An Liu Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an-liu1/An_New_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/an-liu1/An_New_Portfolio/issues"
+  },
+  "homepage": "https://github.com/an-liu1/An_New_Portfolio#readme",
+  "devDependencies": {
+    "gulp-imagemin": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
