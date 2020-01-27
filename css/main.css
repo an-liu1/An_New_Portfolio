@@ -950,6 +950,21 @@ h5 {
 }
 
 /*Responsive*/
+@media (min-width: 2500px) {
+  .container-fluid {
+    max-width: 50%;
+  }
+   .home-title {
+    font-size: 2em;
+    max-width: 1000px;
+    margin-top: 400px;
+    margin-left: 150px;
+  }
+  .ro {
+    margin-top: 350px;
+    width: 60px;
+  }
+}
 
 @media (min-width: 200px) and (max-width: 1199px) {
   .container-fluid {
