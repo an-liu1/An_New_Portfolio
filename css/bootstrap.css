@@ -8040,7 +8040,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important;
+  margin-top: 3rem;
 }
 
 .mr-5,
@@ -8179,12 +8179,12 @@ button.bg-dark:focus {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  padding: 3rem;
 }
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 3rem;
 }
 
 .pr-5,

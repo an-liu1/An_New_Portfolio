@@ -375,7 +375,9 @@ h5 {
 
 .social-icons ul li a {
   font-size: 2em;
-  color: #b50611;
+  color:#FF4500;
+  /* color:#ffcccb; */
+ /* #b50611; */
 }
 
 .social-icons ul li a:hover {
@@ -400,7 +402,15 @@ h5 {
   font-weight: bold;
   padding-top: 60px;
   margin-left: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  color: #dc0a18;
+  display: block;
+}
+.Skititle {
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
   color: #dc0a18;
   display: block;
 }
@@ -547,7 +557,7 @@ h5 {
 
 .experience-history-list .slides li {
   position: relative;
-  width: 380px !important;
+  width: 420px !important;
   height: 700px;
   margin-right: 131px;
 }
@@ -950,32 +960,83 @@ h5 {
 }
 
 /*Responsive*/
-@media (min-width: 2500px) {
-  .container-fluid {
-    max-width: 50%;
-  }
-   .home-title {
-    font-size: 2em;
-    max-width: 1000px;
-    margin-top: 400px;
-    margin-left: 150px;
-  }
-  .ro {
-    margin-top: 350px;
-    width: 60px;
-  }
-}
-
 @media (min-width: 200px) and (max-width: 1199px) {
   .container-fluid {
     max-width: 95%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
   .container-fluid {
     max-width: 85%;
   }
+  .home-title{
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .ro {
+    margin-top: 80px;
+  }
+  .na{
+    font-size: 1em !important;
+  }
+  .skills{
+    padding-top: 0;
+  }
+.honeycomb {
+  margin-left: 25%;
+  -ms-grid-columns: repeat(8, 70px);
+  grid-template-columns: repeat(8, 70px);
+  -ms-grid-rows: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+}
+.honeycomb .hex {
+  width: 60px;
+  height: 70px;
+}
+.hovereffect{
+  height: 290px !important;
+}
+.experience-history-list .slides li {
+  position: relative;
+  width: 480px !important;
+  height: 500px;
+  margin-right: 131px;
+}
+.custom-form{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.contactMac{
+  display: none !important;
+}
+.custom-form{
+padding: 1.5rem !important;
+}
+/* .titleMac{
+  padding-top: 0 !important;
+} */
+.formMac{
+  margin-top: 0 !important; 
+}
+#footerCon {
+  margin-top: 20px;
+}
+
+.cpy-right {
+  color: #f5f5f5;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 1em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cpy-right p {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
 }
 
 @media (min-width: 1600px) {
@@ -990,6 +1051,9 @@ h5 {
   .skillSectionDes img {
     margin-top: 20px;
   }
+  .honeycomb {
+    margin-left: 4%;
+  }
   #footerCon {
     margin-top: 160px;
   }
@@ -1002,6 +1066,7 @@ h5 {
   .ro {
     margin-top: 250px;
   }
+
 }
 @media (min-width: 200px) and (max-width: 768px) {
   .navbar-custom {
